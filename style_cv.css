@@ -1,0 +1,121 @@
+.panel-body {
+    background-color: #102043;
+    border: 0 !important;
+    padding-left: 10px;
+}
+
+.panel {
+    background-color: #102043;
+    border: 0;
+}
+
+.panel-default > .panel-heading {
+    color: white;
+    border: 0px;
+    background-image: none;
+    background-color: #485890;
+}
+
+.panel-title {
+    font-size: 20px;
+}
+
+h1 {
+    line-height: 200%;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.panel-body li {
+    margin-bottom: 12px;
+    margin-left: -40px;
+    list-style: none;
+}
+
+.edu-box-right li {
+    margin-left: -20px;
+    list-style-type: square;
+    margin-bottom: 5px;
+}
+
+.first-author {
+    font-weight: bold;
+}
+
+.paper-title {
+    font-variant: small-caps;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+}
+
+.edu-box-left, .teaching-box-left {
+    display: block;
+    padding-right: 20px;
+    vertical-align: top;
+}
+.teaching-box-left {
+    margin-bottom: 20px;
+}
+
+.edu-box-right, .teaching-box-right {
+    display: block;
+    margin-bottom: 20px;
+    vertical-align: top;
+}
+
+#collapse-teaching li {
+    margin-bottom: 5px;
+}
+#collapse-teaching p {
+    margin-bottom: 20px;
+}
+
+/*#collapse-volunteer .edu-box-right,*/
+#collapse-awards .edu-box-right {
+    margin-bottom: 10px;
+}
+
+#collapse-teaching .edu-box-left {
+    margin-bottom: 20px;
+}
+
+#collapse-language li {
+    margin-bottom: 10px;
+}
+
+#collapse-leadership .edu-box-right, #collapse-skills .edu-box-right {
+    margin-bottom: 10px;
+}
+
+
+@media screen and (min-width: 992px) {
+    .panel-body {
+        padding-left: 40px;
+    }
+
+    .edu-box-left {
+        display: inline-block;
+        width: 120px;
+        vertical-align: top;
+        text-align: right;
+    }
+    .edu-box-right {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    
+    .teaching-box-left, .teaching-box-right {
+        display: inline-block;
+        margin-right: 30px;
+    }
+    
+}
+
+
+
+
+

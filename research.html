@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Wayne Ngan - Research</title>
+<meta property="og:site_name" content="Wayne Ngan"/>
+<meta property="og:title" content="Wayne Ngan"/>
+<meta property="og:description" content="A personal page about who I am"/>
+<meta property="og:url" content="http://www.astro.utoronto.ca/~ngan/"/>
+<meta property="og:image" content="http://www.astro.utoronto.ca/~ngan/me_Geneva_fbpreview.jpg"/>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans|Oswald|Roboto+Condensed" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="email_func.js"></script>
+
+<!-- my own styles -->
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-custom navbar-fixed-top">
+    <div class="container">    
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+            <li><a href="index.html">About</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="personal.html">Personal</a></li>
+            <li class="visible-xs"><a href="javascript:pomegranate();">Contact</a></li>
+            <li><div class="mobile-menu-icons">
+                <a href="https://www.linkedin.com/in/waynengan">      <img src="icons_png/li_icon_big.png"/></a>
+                <a href="https://www.facebook.com/wayne.ngan.1">      <img src="icons_png/fb_icon_big.png"/></a>
+                <a href="https://www.instagram.com/wayne927/">        <img src="icons_png/ig_icon_big.png"/></a>
+                <a href="https://www.flickr.com/photos/34343876@N05/"><img src="icons_png/fl_icon_big.png"/></a>
+                </div>
+            </li>
+            
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right" id="desktop-menu-icons">
+                <li><a href="javascript:pomegranate();"><img src="icons_png/em_icon_big.png"/></a></li>
+                <li><a href="https://www.linkedin.com/in/waynengan">      <img src="icons_png/li_icon_big.png"/></a></li>
+                <li><a href="https://www.facebook.com/wayne.ngan.1">      <img src="icons_png/fb_icon_big.png"/></a></li>
+                <li><a href="https://www.instagram.com/wayne927/">        <img src="icons_png/ig_icon_big.png"/></a></li>
+                <li><a href="https://www.flickr.com/photos/34343876@N05/"><img src="icons_png/fl_icon_big.png"/></a></li>
+            </ul>
+        </div>
+        
+        </ul>
+    </div>
+</nav>
+
+<div class="container side-margin">
+
+<h1>Research</h1>
+
+<p>My research involves a lot of astrophysical simulations that are too large to fit into a single computer. Well, in principle they can if you have unlimited patience and don't mind swapping between memory and hard disk back and forth! Instead, I would have to divide each simulation into multiple pieces and run them in parallel in <a href="http://www.scinethpc.ca/" target="_blank">computing clusters</a>.
+</p>
+
+<p>The simulations I run are called <a href="https://en.wikipedia.org/wiki/N-body_simulation" target="_blank">"N-body" simulations</a>, where N particles interact with all the others by their mutual gravity. When N > 2 (for me N is anywhere from 10<sup>4</sup> to 10<sup>9</sup>) a problem like that has to be solved numerically step-by-step in time. Every simulation output has at least 6 dimensions: 3 for position, and 3 for velocity. There are many existing codes that run N-body simulations, so my work is to understand what we are trying to simulate, set it up, and  analyze the results.
+</p>
+
+<p>Here is a bit of context...</p>
+
+<h1>The &Lambda;CDM universe on small scales</h1>
+
+<p>
+The <a href="https://en.wikipedia.org/wiki/Lambda-CDM_model" target="_blank">&Lambda;CDM</a> (or "lambda-cold-dark-matter") model has been widely successful in describing the universe on large scales. But on small scales, one model prediction that still hasn't been verified is that the dark matter halo of a Milky-Way-sized galaxy isn't smooth, but contains a lot of bound clumps called "subhalos". Because each subhalo should be less than 0.1% of the mass of the Milky Way and is probably made of entirely dark matter, it's very difficult to tell if they exist. Finding evidence for the subhalos' existence is a very important step to understand what dark matter is.
+</p>
+
+<h1>Tidal streams: Basics</h1>
+<p>
+When a small cluster of stars (e.g. a <a href="https://en.wikipedia.org/wiki/Globular_cluster" target="_blank">globular cluster</a> or a <a href="https://en.wikipedia.org/wiki/Dwarf_galaxy" target="_blank">dwarf galaxy</a>) orbits around its host galaxy, the galaxy's <a href="https://en.wikipedia.org/wiki/Tidal_force" target="_blank">tidal field</a> would stretch the star cluster into a long stream that wraps around the galaxy. These "tidal streams" are a promising tool to see if subhalos exist.
+</p>
+<p>
+Imagine a streams of stars lined up one after another. If at some point this stream encountered a subhalo, the subhalo's gravity would knock out some stars along the stream at the point of the impact, and this would show up as a little "gap" in the stream. My computer simulations show that streams in a galaxy with and without subhalos look very different (<a href="http://arxiv.org/abs/1311.1710" target="_blank">Ngan & Carlberg, 2014</a>). This tells us that gaps in tidal streams can be convincing evidence for the subhalos' existence.
+</p>
+
+<div class="fig-box">
+    <img src="research_figs/two_streams_clear.png" class="img-responsive"/>
+    <p>Two tidal streams with their curvatures subtracted. Stream A orbits in a galaxy that has no subhalos, while Stream B orbits in a galaxy that has the subhalos as predicted by the &Lambda;CDM model.<br/>
+(Taken from <a href="http://arxiv.org/abs/1311.1710" target="_blank">Ngan & Carlberg, 2014</a>)</p>
+</div>
+
+<h1>Tidal streams: In reality</h1>
+
+<p>
+Most studies to date, including my own above, used some sort of <a href="https://en.wikipedia.org/wiki/Navarro%E2%80%93Frenk%E2%80%93White_profile" target="_blank">approximation</a> for the host galaxy's gravity. Approximations simplify computations, and the results are easier to understand, at the cost of realism. Sometimes this cost is negligible, but for tidal streams it probably isn't.
+</p>
+
+<p>
+Learning what the Milky Way's dark matter halo actually looks like is a topic of ongoing research, but we already have some rough ideas. Some previous simulations used billions of particles to simulate a large part of the universe, which allowed us to study how dark matter halos form in detail. The output of a <a href="http://www.ucolick.org/~diemand/vl/" target="_blank">"cosmological" simulation like that</a> gives us a realistic dark matter halo, represented by billions of particles.
+</p>
+
+<p>
+Computing the gravity inside a realistic halo is not easy because we are no longer using approximations, but it can be done with a few special tricks (<a href="http://arxiv.org/abs/1411.3760" target="_blank">Ngan et al, 2015</a>). Here is how different tidal streams would look like when their halos' gravity is computed approximately vs realistically:
+</p>
+
+<div class="fig-box">
+    <img src="research_figs/streams_NFW.png" class="img-responsive"/><br/>
+    <img src="research_figs/streams_VLII.png" class="img-responsive"/>
+    <p><strong>Top:</strong> 50 tidal streams projected onto the sky. They are simulated using an approximate way to compute the halo's gravity.<br/>
+    <strong>Bottom:</strong> Same as the top but using a realistic halo. The streams are much more dispersed.<br/>
+    (Taken from <a href="http://arxiv.org/abs/1601.04681" target="_blank">Ngan et al, 2016</a>)</p>
+</div>
+
+<p>
+The streams in the approximate halo (top) are a lot skinnier than the streams in the realistic halo (bottom). This is expected because the approximation is so simple, there isn't much else the stars in a stream can do other than going one after another, so they would just line up roughly in the same track. On the other hand, a realistic halo gives the stars in a stream more freedom to move away from the stream's track.
+</p>
+
+<p>
+So what does this result mean? Is there any point in using the approximate halo to simulate tidal streams? We're not sure yet. At the time of writing, the effect of a realistic halo on tidal streams has only been explored recently, so ongoing research will tell us more.
+</p>
+
+</div>
+
+</body>
+
+</html>

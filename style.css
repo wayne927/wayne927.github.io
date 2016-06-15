@@ -1,0 +1,254 @@
+body {
+    background-color: #102043; /*#203054;*/
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+h1, h2 {
+    color: orange;
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    margin-top: 60px;
+}
+h2 {
+    font-size: 20px;
+}
+h1:first-of-type {
+    margin-top: auto;
+}
+
+
+.side-margin {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a {
+    color: #4885b7  ;
+}
+a:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+.row {
+    margin-bottom: 50px;
+}
+
+
+.navbar-custom {
+    background-color: rgba(0,0,0,0.7);
+    border: 0px;
+}
+.navbar-custom button {
+    background-color: black;
+}
+.icon-bar {
+    background-color: white;
+}
+
+.btn-primary {
+    background-image: none;
+    border: 0px;
+}
+
+li {
+    padding-right: 10px;
+}
+
+nav a {
+    color: white;
+    background-color: transparent;
+    font-size: 25px;
+}
+nav a:hover {
+    background-color: transparent !important;
+    color: white;
+}
+
+nav li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.mobile-menu-icons {
+    margin-left: 18px;
+    padding-top: 20px;
+    border-top: 1px solid white;
+}
+.mobile-menu-icons a {
+    margin-right: 15px;
+}
+.mobile-menu-icons img {
+    width: 32px;
+}
+
+#desktop-menu-icons {
+    display: none;
+}
+
+#myNavbar {
+    max-height: none;
+    overflow-x: hidden;
+}
+
+#title {
+    width: 100%;
+    height: 340px;
+    background-image: url('title.png');
+    background-position: bottom;
+    background-size: cover;
+    margin-bottom: 50px;
+    margin-top: -20px;
+    font-family: "Roboto Condensed";
+    position: relative;
+}
+#title-container {
+    margin: 0;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -40%);
+    -webkit-transform: translate(-50%, -40%);
+}
+#title h1 {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+#title h3 {
+    color: white;
+    font-size: 20px;
+    
+    margin-bottom: 20px;
+}
+#title p {
+    font-size: 15px;
+    font-family: "Open Sans";
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .side-margin {
+        margin: auto;
+    }
+    
+    .row {
+        margin-bottom: 100px;
+    }
+    
+    nav.navbar {
+        /*margin: 20px 50px auto 50px;*/
+        opacity: 0.95;
+    }
+    nav a {
+        font-size: 18px;
+        padding: 0;
+    }
+    nav a:hover {
+        background-color: #777 !important;
+        color: white;
+        transition: background-color 0.3s;
+    }
+    nav li {
+        padding: 0;
+        /*padding-bottom: 0;
+        padding-top: 0;*/
+    }
+
+    .mainpage-icon {
+        color: #485890;
+        font-size: 150px;
+        margin-right: 20px;
+    }
+    .mainpage-icon-shift {
+        color: #485890;
+        font-size: 150px;
+        margin-right: 25px;
+    }
+    .heading-icon {
+        display: none;
+    }
+    
+    .mobile-menu-icons {
+        display: none;
+    }
+    
+    #desktop-menu-icons {
+        display: block;
+        height: 0;
+    }
+    #desktop-menu-icons img {
+        height: 23px;
+    }
+    #desktop-menu-icons a {
+        background-color: transparent;
+        opacity: 0.5;
+    }
+    
+    #desktop-menu-icons a:hover, #desktop-menu-icons a:active {
+        background-color: transparent !important;
+        opacity: 1.0;
+        transition: opacity 0.3s;
+    }
+    
+    #title-container {
+        max-width: 800px;
+    }
+    #title h1 {
+        color: white;
+        font-size: 60px;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+    }
+    #title h3 {
+        color: white;
+        font-size: 30px;
+    
+        margin-bottom: 30px;
+    }
+    #title p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #title  {
+        height: 420px;
+    }
+}
+
+.fig-box {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+}
+.fig-box img {
+    margin: auto;
+    vertical-align: middle;
+}
+.fig-box p {
+    margin: 20px auto 30px auto;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: bottom !important;
+    float: none;
+    border: 1px solid;
+}

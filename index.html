@@ -1,1 +1,130 @@
-Test index.html
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Wayne Ngan - About</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:site_name" content="Wayne Ngan"/>
+<meta property="og:title" content="Wayne Ngan"/>
+<meta property="og:description" content="A personal page about who I am"/>
+<meta property="og:url" content="http://www.astro.utoronto.ca/~ngan/"/>
+<meta property="og:image" content="http://www.astro.utoronto.ca/~ngan/me_Geneva_fbpreview.jpg"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans|Oswald|Roboto+Condensed" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="email_func.js"></script>
+
+<!-- my own styles -->
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-custom navbar-fixed-top">
+    <div class="container">    
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+            <li><a href="index.html">About</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="personal.html">Personal</a></li>
+            <li class="visible-xs"><a href="javascript:pomegranate();">Contact</a></li>
+            <li><div class="mobile-menu-icons">
+                <a href="https://www.linkedin.com/in/waynengan">      <img src="icons_png/li_icon_big.png"/></a>
+                <a href="https://www.facebook.com/wayne.ngan.1">      <img src="icons_png/fb_icon_big.png"/></a>
+                <a href="https://www.instagram.com/wayne927/">        <img src="icons_png/ig_icon_big.png"/></a>
+                <a href="https://www.flickr.com/photos/34343876@N05/"><img src="icons_png/fl_icon_big.png"/></a>
+                </div>
+            </li>
+            
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right" id="desktop-menu-icons">
+                <li><a href="javascript:pomegranate();"><img src="icons_png/em_icon_big.png"/></a></li>
+                <li><a href="https://www.linkedin.com/in/waynengan">      <img src="icons_png/li_icon_big.png"/></a></li>
+                <li><a href="https://www.facebook.com/wayne.ngan.1">      <img src="icons_png/fb_icon_big.png"/></a></li>
+                <li><a href="https://www.instagram.com/wayne927/">        <img src="icons_png/ig_icon_big.png"/></a></li>
+                <li><a href="https://www.flickr.com/photos/34343876@N05/"><img src="icons_png/fl_icon_big.png"/></a></li>
+            </ul>
+        </div>
+        
+        </ul>
+    </div>
+</nav>
+
+<div id="title">
+    <div id="title-container">
+        <div class="container-fluid"><div class="row">
+        <div class="col-xs-5 col-sm-4">
+            <img src="me_Geneva_square.jpg" class="img-responsive img-rounded">
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-xs-7 col-sm-7">
+            <h1>Wayne Ngan</h1>
+            <h3>Computational Scientist<br>PhD in Astrophysics</h3>
+            <p><script>watermelon();</script></p>        
+        </div>
+        </div></div>
+    </div>
+</div>
+
+
+<div class="container side-margin">
+<div class="row">
+    <div class="col-sm-3 hidden-xs text-right">
+    <span class="glyphicon glyphicon-user mainpage-icon"></span>
+    </div>
+    <div class="col-sm-9 col-xs-12">
+    <h1><span class="glyphicon glyphicon-user heading-icon"></span> About Wayne Ngan</h1>
+
+    <p>I am a computational scientist living in Toronto, Ontario. I grew up in Hong Kong and moved to Vancouver with my family when I was twelve. I finished my Bachelors degree with an Honors in Physics and Astronomy and a Minor in Computer Science in University of British Columbia. I then moved to Toronto for my PhD in Astronomy in University of Toronto, where I defended my thesis in August 2015.</p>
+    
+    <a href="resume.html" class="btn btn-primary">See my resume for details</a>
+    
+    </div>
+</div>
+    
+<div class="row">
+    <div class="col-sm-3 hidden-xs text-right">
+    <span class="glyphicon glyphicon-briefcase mainpage-icon"></span>
+    </div>
+    <div class="col-sm-9 col-xs-12">
+
+    <h1><span class="glyphicon glyphicon-briefcase heading-icon"></span> Professional interests</h1>
+    <p>I am interested in writing code to solve numerical problems in general. For my PhD thesis, I focused on the computational aspect of astronomy where I used numerical simulations to simulate astrophysical systems. Both the simulations and the analysis were too large to fit into a single computer, so the code had to be run in parallel in high-performance computing facilities. The results helped us understand how to use the dynamics of stars to probe the distribution of dark matter in our galaxy.</p>
+    
+    <a href="research.html" class="btn btn-primary">See my research for details</a>
+    
+    </div>
+</div>
+   
+<div class="row">
+    <div class="col-sm-3 hidden-xs text-right">
+    <span class="glyphicon glyphicon-cd mainpage-icon-shift"></span>
+    </div>
+    <div class="col-sm-9 col-xs-12">
+    
+    <h1><span class="glyphicon glyphicon-cd heading-icon"></span> Personal interests</h1>
+    <p>Aside from my profession, I spend much of my free time yo-yoing as a hobby. In addition to playing yo-yos on my own for fun, I often lead public activities that introduce the hobby to newcomers. I am a freelance yoyo demonstrator, and I also manage the Toronto Yo-Yo club and the Canadian Yo-yo Association.</p>
+    
+    <a href="personal.html" class="btn btn-primary">See my personal page for details</a>
+    
+    </div>
+</div>
+    
+
+</div>
+</div>
+
+</body>
+
+</html>

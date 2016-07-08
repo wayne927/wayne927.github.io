@@ -91,6 +91,9 @@ h4 {
     margin-bottom: 10px;
 }
 
+.LI-profile-badge {
+    display: none;
+}
 
 @media screen and (min-width: 992px) {
     .panel-body {
@@ -111,6 +114,29 @@ h4 {
     .teaching-box-left, .teaching-box-right {
         display: inline-block;
         margin-right: 30px;
+    }
+    
+    .LI-profile-badge {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+        opacity: 0.9;
+    }
+    .LI-profile-badge #close-button {
+        color: black;
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        font-size: 25px;
+    }
+    .LI-profile-badge #close-button a:hover {
+        color: #4885b7;
+    }
+    
+    #LI-paragraph {
+        display: none;
     }
     
 }
